@@ -1,19 +1,18 @@
-package cadastroRebeldeApp.Rebelde;
+package cadastroRebeldeApp.Domain;
 
 import cadastroRebeldeApp.Enum.Raca;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NonNull;
+import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 
 public class Rebelde {
-    @NonNull
     private String nome;
-    @NonNull
     private int idade;
     private Raca raca;
 }
